@@ -32,3 +32,4 @@
       cv2.destroyAllWindows()
         
 # Test Result
+<img src="https://github.com/xidaniel/Video-analysis-and-algorithm-optimization/blob/master/image/person%20in%20right.png" width = "400"  alt="Person in right" align=center />
