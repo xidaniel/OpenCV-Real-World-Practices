@@ -5,7 +5,8 @@
   - Second algorithm is based on the paper **"Navier-Stokes, Fluid Dynamics, and Image and Video Inpainting"** by Bertalmio, Marcelo, Andrea L. Bertozzi, and Guillermo Sapiro in 2001. This algorithm is based on fluid dynamics and utilizes partial differential equations. Basic principle is heurisitic. It first travels along the edges from known regions to unknown regions (because edges are meant to be continuous). It continues isophotes (lines joining points with same intensity, just like contours joins points with same elevation) while matching gradient vectors at the boundary of the inpainting region. For this, some methods from fluid dynamics are used. Once they are obtained, color is filled to reduce minimum variance in that area. This algorithm is enabled by using the flag, cv.INPAINT_NS.
 
 
-# [Coding Example](https://github.com/xidaniel/OpenCV-Practices/blob/master/sources%20code/inpainting.py)
-      
+## [Coding Example](https://github.com/xidaniel/OpenCV-Practices/blob/master/sources%20code/inpainting.py)
+
+
 # Test Result
 <img src="https://github.com/xidaniel/OpenCV-Practices/blob/master/Images/inpaint.png"  alt="Person in right" align=center />
