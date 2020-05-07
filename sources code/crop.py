@@ -5,6 +5,8 @@ import os
 
 def cropImg(img):
     gray = cv2.cvtColor(img.copy(), cv2.COLOR_BGR2GRAY)
+    
+    ## adjust the second and third argument 
     ret, thresh = cv2.threshold(gray, 180, 255, cv2.THRESH_BINARY_INV)
     image, contours, hier = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
     con_size = [len(contours[i]) for i in range(len(contours))]
