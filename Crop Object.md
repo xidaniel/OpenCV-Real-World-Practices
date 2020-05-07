@@ -1,4 +1,6 @@
 # Background
+  - Why?
+    - When we want to annotate or crop a huge number of images, and those images were shooted in the same situation. If you are boring to crop an image by hand, please use this program.
   - Restriction: 
     - Object must be largest object on image
     - Background should as clean as possible
