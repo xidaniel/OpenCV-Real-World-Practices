@@ -39,10 +39,13 @@ def run():
             namePrefix = file_name.split('.jpg')[0]
         elif file_name[-4:] == '.png':
             namePrefix = file_name.split('.png')[0]
-        crop = cropImg(img)
-        cv2.imwrite(IMAGE_OUTPUT + namePrefix + '.png', crop)
-        size -= 1
-        print('Completed {}th image and left {} images'.format(i, size))
+        try:
+            crop = cropImg(img)
+            cv2.imwrite(IMAGE_OUTPUT + namePrefix + '.png', crop)
+            size -= 1
+            print('Completed {}th image and left {} images'.format(i, size))
+        except:
+            pass
 
 
 
