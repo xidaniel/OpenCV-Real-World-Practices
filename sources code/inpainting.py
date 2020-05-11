@@ -10,7 +10,8 @@ import numpy as np
 
 
   # make mask, mask area must great than recover area
-  mask = np.zeros(img.shape[:2], np.uint8)
+  height, width = img.shape[:2]
+  mask = np.zeros((height, width, 1), np.uint8)
   cv2.line(mask, (10,70), (200,200), (255,255,255), 2, 4)
   cv2.line(mask, (515,118), (434,372), (255,255,255), 2, 8)
   cv2.circle(mask, (300,300), 5, (255,255,255), 5)
