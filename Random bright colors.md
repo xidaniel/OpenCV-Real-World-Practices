@@ -13,6 +13,7 @@
             convert to RGB.
             """
             brightness = 1.0 if bright else 0.7
+            
             #non-normmalized RGB tuple
             colors = [tuple(round(j * 255) for j in colorsys.hsv_to_rgb(i / N, 1, brightness)) for i in range(N)]
             random.shuffle(colors)
